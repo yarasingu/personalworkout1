@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1039777107691",
+    "project_id": "personalworkouts-48ee0",
+    "storage_bucket": "personalworkouts-48ee0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039777107691:android:0554eea2f85d7b7d8ab8ae",
+        "android_client_info": {
+          "package_name": "app.tarun.workout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-KuCwd9QvAJR9GPBABXgFBesCWCeVNBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
