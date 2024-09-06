@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:personalworkout/components/my_drawer_tile.dart';
 import 'package:personalworkout/pages/settings_page.dart';
+import 'package:personalworkout/pages/workouts_list.dart';
 import 'package:personalworkout/services/auth/auth_service.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -50,6 +51,16 @@ class MyDrawer extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => const SettingsPage(),
                     ));
+              },
+            ),
+            MyDrawerTile(
+              title: "All Workouts",
+              icon: Icons.sports_gymnastics,
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const WorkoutsList()));
               },
             ),
             MyDrawerTile(
