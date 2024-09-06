@@ -10,4 +10,15 @@ class WorkoutService {
       'value': workout.value,
     });
   }
+
+  Stream<List<Workout>> getWorkouts() {
+    return _workouts.collection('workouts').snapshots().map((snapshot) {
+      return snapshot.docs.map((doc) {
+        return Workout(
+          name: doc['name'],
+          value: doc['value'],
+        );
+      }).toList();
+    });
+  }
 }
